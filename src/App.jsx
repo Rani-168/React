@@ -21,32 +21,37 @@ import './App.css'
 
 
 
-function App() {
+function App(){
   let isLoggedIn = true;
   let isVisiable = false;
-  return(
-    <div>
-      {isLoggedIn ? <p>Welcome Back</p> : <p>Login in</p>}
-      {isVisiable && <div>thiss is div </div>}
-    
 
-      <hr />
-      <TextCom text="my name is Ankita" city="Pune" age={56}></TextCom>
-      <TextCom text="I live in Pune"></TextCom>
-      <TextCom text="I love Video editing"></TextCom>
-      </div>
+  return (
+    <div>
+      {isLoggedIn ? <p> Welcome Back</p> : <p>Login in</p>}
+        {isVisiable && <div>thiss is div </div>}
+        <hr />
+        <TextCom text="My name is Rani" city="Pune" age={21}></TextCom>
+        <TextCom text="I live in pune."></TextCom>
+        <TextCom text="I love to sketching"></TextCom>
+    </div>
   )
 }
 
 function TextCom(props){
-  console.log("Something", props);
+  console.log("somthing", props)
   return (
     <div>
       <p>{props.text}</p>
       <p>{props.city}</p>
       <p>{props.age}</p>
+      
     </div>
   )
 }
+
+
+
+
+
 export default App
 
