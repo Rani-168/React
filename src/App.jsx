@@ -25,6 +25,13 @@ function App(){
   let isLoggedIn = true;
   let isVisiable = false;
 
+    let message;
+  if (isLoggedIn) {
+    message = <p>Welcome Back</p>;
+  } else {
+    message = <p>Please Login</p>;
+  }
+
   return (
     <div>
       {isLoggedIn ? <p> Welcome Back</p> : <p>Login in</p>}
@@ -48,10 +55,6 @@ function TextCom(props){
     </div>
   )
 }
-
-
-
-
 
 export default App
 
