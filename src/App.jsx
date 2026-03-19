@@ -1,5 +1,5 @@
 
-
+import  Day4 from './Day4'
 import FirstComponent from './FirstComponent'
 import './App.css'
 import { useState } from 'react'
@@ -9,6 +9,13 @@ import { useState } from 'react'
 
 function App() {
 
+
+  return (
+    <div>
+      
+       <Day4></Day4>
+    </div>
+  )
 
   // let [nums, setNems] = useState([])
   // function Addunums(){
@@ -41,18 +48,18 @@ function App() {
   
 
 
-  const [name, setName] = useState("");
+  // const [name, setName] = useState("");
 
-  function handleChange(event) {
-    setName(event.target.value);
-  }
+  // function handleChange(event) {
+  //   setName(event.target.value);
+  // }
 
-  return (
-    <div>
-      <input type="text" value={name} onChange={handleChange} placeholder="Type your name..."/>
-      <p>📝 Your name: {name}</p>
-    </div>
-  );
+  // return (
+  //   <div>
+  //     <input type="text" value={name} onChange={handleChange} placeholder="Type your name..."/>
+  //     <p>📝 Your name: {name}</p>
+  //   </div>
+  // );
 
 
 
