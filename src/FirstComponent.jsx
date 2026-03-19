@@ -1,27 +1,41 @@
 import { useState } from 'react';
 function FirstComponent(){
-    let [num, setNum] = useState(0);
-    function increase(){
-        setNum(num + 1);
-    }
+    // let [num, setNum] = useState(0);
+    // function increase(){
+    //     setNum(num + 1);
+    // }
 
-    function decrese(){
-        setNum(num - 1);
-    }
+    // function decrese(){
+    //     setNum(num - 1);
+    // }
 
-    function reseat(){
-        setNum(0);
-    }
+    // function reseat(){
+    //     setNum(0);
+    // }
 
-    return (
-        <div>
-            <h1>num is {num}</h1>
-            <button onClick={increase}>Increase</button>
-            <button onClick={decrese}>decerse</button>
-            <button onClick={reseat}>resest</button>
+    // return (
+    //     <div>
+    //         <h1>num is {num}</h1>
+    //         <button onClick={increase}>Increase</button>
+    //         <button onClick={decrese}>decerse</button>
+    //         <button onClick={reseat}>resest</button>
 
-        </div>
-    )
+    //     </div>
+    // )
+
+
+//      const [name, setName] = useState("");
+
+//   function handleChange(event) {
+//     setName(event.target.value);
+//   }
+
+//   return (
+//     <div>
+//       <input type="text" value={name} onChange={handleChange} placeholder="Type your name..."/>
+//       <p>📝 Your name: {name}</p>
+//     </div>
+//   );
 // let info = [
 //     {
 //       "id": 1,
@@ -64,7 +78,10 @@ function FirstComponent(){
 export default FirstComponent;
 
 
+
 // when we use arrray or list by map then use unque key
   // unidirsection flow of data in react
   //state :
 //it is a value ,which can change // when it change then update the coponent automatice //  state is rerender 
+// state is memory of component
+//rerender is expensive operation

@@ -1,21 +1,52 @@
+
+
 import FirstComponent from './FirstComponent'
 import './App.css'
+import { useState } from 'react'
 
-import { userstate } from 'react';
+
 
 
 function App() {
-   <FirstComponent> </FirstComponent>
+
+
+  let [nums, setNems] = useState([])
+  function Addunums(){
+    setNems(...nums, 10);
+  }
 
   return (
-    
-   <div>
-   <h1>hiiiiiiiii</h1>
-   <p>hello</p> 
-  <FirstComponent> </FirstComponent>
-   </div>  
-      
+    <div>
+    <button onClick={Addunums}>addnum</button>
+    {}
+
+    </div>
   )
+  
+//    let [isVisiable, setisVisible] = useState(0);
+//    function VisibleCheck() {
+//       setisVisible(isVisiable + 1);
+//    }
+
+//     function VisibleCheck2() {
+//       setisVisible(isVisiable + 5);
+//    }
+//  // 
+//   return (
+
+//        <div>  
+//       <p>value {isVisiable}</p>
+//     <button onClick={VisibleCheck}>answer</button>
+//     <button onClick={VisibleCheck2}>increase 5</button>
+
+   
+
+   
+//   <FirstComponent> </FirstComponent>
+  
+//    </div>  
+      
+//   )
 }
 
 
@@ -58,3 +89,4 @@ function App() {
 
 export default App
 
+//how to extand value from  array
