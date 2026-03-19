@@ -61,14 +61,10 @@ function FirstComponent(){
     //     </div>
     // )
 }
-
-
-
-
+export default FirstComponent;
 
 
 // when we use arrray or list by map then use unque key
   // unidirsection flow of data in react
   //state :
 //it is a value ,which can change // when it change then update the coponent automatice //  state is rerender 
-export default FirstComponent;
