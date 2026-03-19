@@ -10,19 +10,56 @@ import { useState } from 'react'
 function App() {
 
 
-  let [nums, setNems] = useState([])
-  function Addunums(){
-    setNems(...nums, 10);
+  // let [nums, setNems] = useState([])
+  // function Addunums(){
+  //   setNems(...nums, 10);
+  // }
+
+  // return (
+  //   <div>
+  //   <button onClick={Addunums}>addnum</button>
+  //   {}
+
+  //   </div>
+  // )
+  
+
+  
+//   function sayHello(name) {
+//     alert(`👋 Hello, ${name}!`);
+//   }
+// function SayHello(){
+//    sayHello("Rani"); 
+// }
+//   return (
+//     <button onClick={SayHello}>
+//       Greet Me 🎉
+//     </button>
+//   );
+
+
+  
+
+
+  const [name, setName] = useState("");
+
+  function handleChange(event) {
+    setName(event.target.value);
   }
 
   return (
     <div>
-    <button onClick={Addunums}>addnum</button>
-    {}
-
+      <input type="text" value={name} onChange={handleChange} placeholder="Type your name..."/>
+      <p>📝 Your name: {name}</p>
     </div>
-  )
-  
+  );
+
+
+
+
+
+
+
 //    let [isVisiable, setisVisible] = useState(0);
 //    function VisibleCheck() {
 //       setisVisible(isVisiable + 1);
