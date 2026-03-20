@@ -62,18 +62,18 @@ function FirstComponent(){
 //       "userId": 84
 //     }]
 
-    // let newarray = info.map((s)=>{
-    //     return<div key={s.id}>
-    //     <p>{s.todo}</p>
-    //     <p>Status: {s.completed ? "Done" : "Pending"}</p>
-    //   </div>
-    // });
-    // return (
-    //     <div>
-    //         <h1>React js day 03</h1>
-    //         {newarray}
-    //     </div>
-    // )
+    let newarray = info.map((s)=>{
+        return<div key={s.id}>
+        <p>{s.todo}</p>
+        <p>Status: {s.completed ? "Done" : "Pending"}</p>
+      </div>
+    });
+    return (
+        <div>
+            <h1>React js day 03</h1>
+            {newarray}
+        </div>
+    )
 }
 export default FirstComponent;
 
