@@ -17,18 +17,18 @@ function App() {
     </div>
   )
 
-  // let [nums, setNems] = useState([])
-  // function Addunums(){
-  //   setNems(...nums, 10);
-  // }
+  let [nums, setNems] = useState([])
+  function Addunums(){
+    setNems(...nums, 10);
+  }
 
-  // return (
-  //   <div>
-  //   <button onClick={Addunums}>addnum</button>
-  //   {}
+  return (
+    <div>
+    <button onClick={Addunums}>addnum</button>
+    {}
 
-  //   </div>
-  // )
+    </div>
+  )
   
 
   
