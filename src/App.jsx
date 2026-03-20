@@ -17,35 +17,33 @@ function App() {
     </div>
   )
 
-  let [nums, setNems] = useState([])
-  function Addunums(){
-    setNems(...nums, 10);
+  // let [nums, setNems] = useState([])
+  // function Addunums(){
+  //   setNems(...nums, 10);
+  // }
+
+  // return (
+  //   <div>
+  //   <button onClick={Addunums}>addnum</button>
+  //   {}
+
+  //   </div>
+  // )
+  
+
+  
+  function sayHello(name) {
+    alert(`👋 Hello, ${name}!`);
   }
-
+function SayHello(){
+   sayHello("Rani"); 
+}
   return (
-    <div>
-    <button onClick={Addunums}>addnum</button>
-    {}
+    <button onClick={SayHello}>
+      Greet Me 🎉
+    </button>
+  );
 
-    </div>
-  )
-  
-
-  
-//   function sayHello(name) {
-//     alert(`👋 Hello, ${name}!`);
-//   }
-// function SayHello(){
-//    sayHello("Rani"); 
-// }
-//   return (
-//     <button onClick={SayHello}>
-//       Greet Me 🎉
-//     </button>
-//   );
-
-
-  
 
 
   // const [name, setName] = useState("");
