@@ -1,27 +1,74 @@
-import { useState } from 'react';
-function FirstComponent(){
-    // let [num, setNum] = useState(0);
-    // function increase(){
-    //     setNum(num + 1);
-    // }
+import { useEffect, useState } from 'react';
 
-    // function decrese(){
-    //     setNum(num - 1);
-    // }
+function FirstComponent() {
 
-    // function reseat(){
-    //     setNum(0);
-    // }
+  let [product, setProduct] = useState([]);
+  let [count, setCount] = useState(0);
 
-    // return (
-    //     <div>
-    //         <h1>num is {num}</h1>
-    //         <button onClick={increase}>Increase</button>
-    //         <button onClick={decrese}>decerse</button>
-    //         <button onClick={reseat}>resest</button>
+  async function rani() {
+    const res = await fetch("https://dummyjson.com/products");
+    const data = await res.json();
+    setProduct(data.products); // correct key
+  }
 
-    //     </div>
-    // )
+  useEffect(() => {
+    rani(); // calling function
+    console.log("Data fetched");
+  }, []);
+
+  return (
+    <div>
+      <button onClick={() => setCount(count + 1)}>
+        Click me {count}
+      </button>
+
+      <h2>Product List</h2>
+
+      {
+        product.map((item) => (
+          <div key={item.id}>
+            <h3>{item.title}</h3>
+            <p>Price: ₹{item.price}</p>
+          </div>
+        ))
+      }
+
+    </div>
+  );
+
+
+
+
+
+    
+//     let [num, setNum] = useState(0);
+//     function increase(){
+//         setNum(num + 1)
+     
+// }
+// useEffect(()=>{console.log("geda")  
+    
+//     }, [])
+//     function decrese(){
+//         setNum(num - 1);
+//          console.log("anikita")
+    
+//     }
+
+//     function reseat(){
+//         setNum(0);
+//         console.log("rani")
+//     }
+
+//     return (
+//         <div>
+//             <h1>num is {num}</h1>
+//             <button onClick={increase}>Increase</button>
+//             <button onClick={decrese}>decerse</button>
+//             <button onClick={reseat}>resest</button>
+
+//         </div>
+//     )
 
 
 //      const [name, setName] = useState("");
@@ -62,18 +109,18 @@ function FirstComponent(){
 //       "userId": 84
 //     }]
 
-    let newarray = info.map((s)=>{
-        return<div key={s.id}>
-        <p>{s.todo}</p>
-        <p>Status: {s.completed ? "Done" : "Pending"}</p>
-      </div>
-    });
-    return (
-        <div>
-            <h1>React js day 03</h1>
-            {newarray}
-        </div>
-    )
+//     let newarray = info.map((s)=>{
+//         return<div key={s.id}>
+//         <p>{s.todo}</p>
+//         <p>Status: {s.completed ? "Done" : "Pending"}</p>
+//       </div>
+//     });
+//     return (
+//         <div>
+//             <h1>React js day 03</h1>
+//             {newarray}
+//         </div>
+//     )
 }
 export default FirstComponent;
 

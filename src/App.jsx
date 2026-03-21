@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div>
-      
+      <FirstComponent></FirstComponent>
        <Day4></Day4>
     </div>
   )
@@ -32,17 +32,17 @@ function App() {
   
 
   
-  function sayHello(name) {
-    alert(`👋 Hello, ${name}!`);
-  }
-function SayHello(){
-   sayHello("Rani"); 
-}
-  return (
-    <button onClick={SayHello}>
-      Greet Me 🎉
-    </button>
-  );
+//   function sayHello(name) {
+//     alert(`👋 Hello, ${name}!`);
+//   }
+// function SayHello(){
+//    sayHello("Rani"); 
+// }
+//   return (
+//     <button onClick={SayHello}>
+//       Greet Me 🎉
+//     </button>
+//   );
 
 
 
