@@ -3,6 +3,12 @@ import  Day4 from './Day4'
 import FirstComponent from './FirstComponent'
 import './App.css'
 import { useState } from 'react'
+import Home from './Home'
+import { BrowserRouter,Routes, Route } from 'react-router-dom'
+import About from './About'
+import Login from './Login'
+import Product from './Product'
+import NotFound from './NotFound'
 
 
 
@@ -11,10 +17,24 @@ function App() {
 
 
   return (
-    <div>
-      <FirstComponent></FirstComponent>
-       <Day4></Day4>
-    </div>
+   
+       <BrowserRouter>
+         <Routes>
+          <Route path='/' element={<Home />}> 
+                   </Route>
+          <Route path='/about' element={<About />}> 
+                   </Route>
+          <Route path='/login' element={<Login />}> 
+                   </Route>
+          <Route path='/Product/:id' element={<Product />}> 
+                   </Route>
+          <Route path='*' element={<NotFound />}> 
+                   </Route>
+
+          </Routes>
+          </BrowserRouter>
+       
+  
   )
 
   // let [nums, setNems] = useState([])

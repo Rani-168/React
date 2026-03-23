@@ -18,7 +18,7 @@ function  Day4(){
 //     </div>
 //   );
 
-  const names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+  // const names = ["Alice", "Bob", "Charlie", "David", "Eve"];
   
   // const [search, setSearch] = useState("");
 
