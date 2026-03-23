@@ -3,11 +3,11 @@ function Home() {
   return (
   <div>Home Page 
     <br />
-   <Link to="/Login">login</Link>
-   <Link to="/About">About</Link>
-   <Link to="/product/1">product1</Link>
-   <Link to="/product/2">product2</Link>
-   <Link to="/product/3">product3</Link>
+ <Link to="/login">Login</Link>
+<Link to="/about">About</Link>
+<Link to="/product/1">Product1</Link>
+<Link to="/product/2">Product2</Link>
+<Link to="/product/3">Product3</Link>
   
   </div>
   )
