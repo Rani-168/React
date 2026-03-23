@@ -1,6 +1,6 @@
 
-import  Day4 from './Day4'
-import FirstComponent from './FirstComponent'
+// import  Day4 from './Day4'
+// import FirstComponent from './FirstComponent'
 import './App.css'
 import { useState } from 'react'
 import Home from './Home'
@@ -21,10 +21,10 @@ function App() {
        <BrowserRouter>
          <Routes>
          <Route path='/' element={<Home />} />
-<Route path='/about' element={<About />} />
-<Route path='/login' element={<Login />} />
-<Route path='/product/:id' element={<Product />} />
-<Route path='*' element={<NotFound />} />
+         <Route path='/about' element={<About />} />
+         <Route path='/login' element={<Login />} />
+         <Route path='/product/:id' element={<Product />} />
+         <Route path='*' element={<NotFound />} />
 
           </Routes>
           </BrowserRouter>
